@@ -63,6 +63,11 @@
     margin-left: auto;
    
 }
+.accueil{
+    width: 100%;
+    height: 700px;
+
+}
 
 .text .titre{
     margin: 0;
@@ -99,7 +104,7 @@
     justify-content: space-between;
     width: 50% ;
     margin: auto;
-    margin-top: 35px;
+    margin-top: 105px;
     margin-bottom: 30px;
 }
 
@@ -111,7 +116,19 @@
     width: 50%;
     margin-top: 20px;
 }
-
+.button.top{
+    
+    width: 100%;
+    position: fixed;
+    margin-top: 45px;
+   
+}
+.fa-angle-double-up{
+    color: transparent;
+    float: right;
+    margin-right:30px ;
+    cursor: pointer;
+}
 /*---------------------------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------page projets---------------------------------------------------------------*/
 .section_project{
@@ -150,6 +167,7 @@
 }
 .section_services  .titre{
     margin: 0;
+    margin-top: 50px;
     text-align: center;
     color: violet;
     font-size: 40px;
@@ -159,6 +177,7 @@
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     text-align: center;
+    margin-top: 80px;
 }
 
 /*---------------------------------------------------------------------------------------------------------------------*/
