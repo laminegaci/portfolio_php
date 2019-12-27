@@ -1,0 +1,22 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <style>
+    body{
+        background-image: url('bg.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    </style>
+    <body>
+        <!-- <img src="bg.svg" width="100%"> -->
+        <p>Window size: <span id="size"></span> pixels</p>
+        <script>
+        window.onresize = function() {
+            document.getElementById("size").innerHTML = window.innerWidth;
+        };
+        </script>
+    </body>
+</html>

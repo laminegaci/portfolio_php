@@ -1,6 +1,10 @@
 html{
     scroll-behavior: smooth;
 }
+.admin{
+    color: red;
+    text-align: center;
+}
 *{
     margin:0px;
     padding:0px;
@@ -63,7 +67,7 @@ html{
     background-size: cover;
     width: 100%;
     height: 754px;
-}*
+}
 .hello_area{
     background-color: rgba(187, 182, 215, 0.6);
     border-radius: 0px 150px 150px 0px;
@@ -352,6 +356,7 @@ html{
     border-bottom-color: #fff;
     pointer-events:none;
     outline:none;
+    color: white;
 }
 .btn{
     border-radius: 0;
@@ -439,21 +444,26 @@ footer .titre{
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /*large device*/
 @media screen and (max-width:1024px){
+    
     .navbar{
-        width: 45%;   
+        width: 45%;     
     }
-    .text .titre{
+    .hello_area{
+        background-color: rgba(187, 182, 215, 0.6);
+        border-radius: 0px 150px 150px 0px;
+        width: 600px;
+        height: 654px;
+        display: block;
+        text-align: ;
+        
+    }
+    .hello_area .titre{
        
         color: green;
         
     }
-    .reseau-sociaux i{
-        color: red;
-        font-size: 4em;
-    }
-    .text .photo{
-        margin-top: 5px;
-    }
+    
+
 
 }
 
@@ -461,6 +471,14 @@ footer .titre{
 @media screen and (max-width:768px){
     body{
         overflow-x: hidden;
+    }
+    
+    .accueil{
+        background-image: url('../images/bg.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 754px;
     }
    .navbar{
        position: absolute;

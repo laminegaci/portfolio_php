@@ -1,11 +1,21 @@
 <?php require_once('../private/initialize.php');?>
 <?php $page_title = 'Portfolio'; ?>
 <?php require_once(SHARED_PATH . '/header.php');?>
+<?php
+if($_SESSION['waslat']){
+    echo 
+    '<script>
+        alert("c bon la79at");
+    </script>';
+    $_SESSION['waslat'] = false;
+}
 
+
+?>
 <div class="container-fluid">
     <nav id="nav">
         <div class="logo">
-          <a href="#accueil"> <img src="images/logo3.png" alt="" id="logo"></a>
+          <a href="#accueil"> <img class="" src="images/logo3.png" alt="" id="logo"></a>
         </div>
         <ul class="navbar">
            
@@ -30,10 +40,12 @@
                 <p class="description"><i class="quote teal left icon"></i>Je suis un Developpeur Web <br>
                 FULL STACK Front-End & Back-End <br> à Alger. <br>
                 Bienvenue sur mon portfolio!  <i class="quote teal right icon"></i></p>
-                <a href="">Contactez moi</a>
+                <a href="#contact">Contactez moi</a>
             </div><!-- end class hello_area -->
             <div>
-                <img src="" alt="" data-aos="fade-left" data-aos-easing="ease-in-back" data-aos-duration="3000" >
+            
+                <img src="images/pc1.png" alt="mkch" data-aos="fade-left" data-aos-easing="ease-in-back" data-aos-duration="3000" >
+                   
             </div>
         </div><!-- end class text -->
         <div class="button top" >
@@ -104,7 +116,7 @@
        
                 <div class="services">
                    
-                    <div class="svs_item">
+                    <div class="svs_item" data-aos="fade-up">
                         <div class="line line1"></div><!-- line1 -->
                             <div class="service">
                                 <i class="edit big icon"></i>
@@ -115,7 +127,7 @@
                             </div>
                         <div class="line line2"></div><!-- line1 -->
                     </div>
-                    <div class="svs_item">
+                    <div class="svs_item" data-aos="fade-up">
                         <div class="line line1"></div><!-- line1 -->
                             <div class="service">
                                 <i class="code big icon" ></i>
@@ -129,7 +141,7 @@
                     </div>
 
                    
-                    <div class="svs_item">
+                    <div class="svs_item" data-aos="fade-up">
                         <div class="line line1"></div><!-- line1 -->
                             <div class="service">
                                 <i class="mobile alternate big icon"></i>
@@ -140,7 +152,7 @@
                         <div class="line line2"></div><!-- line1 -->
                     </div>
                     
-                    <div class="svs_item">
+                    <div class="svs_item" data-aos="fade-up">
                         <div class="line line1"></div><!-- line1 -->
                             <div class="service">
                                 <i class="images outline big icon"></i>
@@ -151,7 +163,7 @@
                             </div>
                         <div class="line line2"></div><!-- line1 -->
                     </div>
-                    <div class="svs_item">
+                    <div class="svs_item" data-aos="fade-up">
                         <div class="line line1"></div><!-- line1 -->
                             <div class="service">
                                 <i class="code big icon"></i>
@@ -162,7 +174,7 @@
                             </div>
                         <div class="line line2"></div><!-- line1 -->
                     </div>
-                    <div class="svs_item">
+                    <div class="svs_item" data-aos="fade-up">
                         <div class="line line1"></div><!-- line1 -->
                             <div class="service">
                                 <i class="database big icon"></i>
@@ -224,27 +236,27 @@
                         </div>
                         <div class="right">
                             <div class="form-control">
-                                <form method="POST" action="" class="form">
+                                <form method="POST" action="administrateur/messages/add_message.php" class="form">
                                         <div class="field" data-aos="fade-left"   data-aos-delay="300"
-     data-aos-offset="0"  data-aos-easing="ease-in-back">
+                                                        data-aos-offset="0"  data-aos-easing="ease-in-back">
                                             <input class="field-input" type="text" name="nom" placeholder="Nom">
                                         </div>
                                         <div class="field" data-aos="fade-left"   data-aos-delay="300"
-     data-aos-offset="0"  data-aos-easing="ease-in-back">
+                                                         data-aos-offset="0"  data-aos-easing="ease-in-back">
                                             <input class="field-input" type="text" name="prenom" placeholder="prenom">
                                         </div>
                                         <div class="field" data-aos="fade-left"   data-aos-delay="300"
-     data-aos-offset="0"  data-aos-easing="ease-in-back">
-                                            <input class="field-input" type="Email" name="mail" placeholder="e-mail">
+                                                        data-aos-offset="0"  data-aos-easing="ease-in-back">
+                                            <input class="field-input" type="text" name="email" placeholder="e-mail">
                                         </div>
                                         <div class="field" data-aos="fade-left"   data-aos-delay="300"
-     data-aos-offset="0"  data-aos-easing="ease-in-back">
-                                        <textarea class="field-input message" row="6" placeholder="Message"></textarea>
+                                                        data-aos-offset="0"  data-aos-easing="ease-in-back">
+                                        <textarea class="field-input message" row="6" placeholder="Message" name="message"></textarea>
                                         </div>
                                         <input type="submit" value="Annuler" class="btn annuler" data-aos="fade-left"   data-aos-delay="300"
-     data-aos-offset="0"  data-aos-easing="ease-in-back">
+                                                        data-aos-offset="0"  data-aos-easing="ease-in-back">
                                         <input type="submit" value="Envoyer" class="btn envoyer" data-aos="fade-left"   data-aos-delay="300"
-     data-aos-offset="0"  data-aos-easing="ease-in-back">
+                                                        data-aos-offset="0"  data-aos-easing="ease-in-back">
                                    
                                 </form>
                             </div>
@@ -317,6 +329,19 @@
             <hr class="footer-hr">
             <p class="copyright"> 2019-2020 Mon Portfolio  -Tous les droits sont réservés.</p>
         </div>
+      
+
+       <!-- <div style="width:200px;  height:200px; background-color:#D14233;">
+            <figure class="imghvr-push-up" style="background-color:white;">
+            <img src="images/pc1.png">
+            <figcaption>
+               <form action="">
+                    <input type="submit">
+                    <input type="submit">
+               </form>
+            </figcaption>
+            </figure>
+       </div> -->
              
     </footer><!-- end footer -->
 
